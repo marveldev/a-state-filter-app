@@ -1,0 +1,23 @@
+body {
+  background-color: #a52424;
+}
+
+.container {
+  text-align: center;
+
+}
+
+.input {
+  padding: 0.5em 0em;
+  width: 70%;
+}
+
+h1 {
+  font-size: 2em;
+  color: #f0f8ff;
+}
+
+h1>i {
+  color: black;
+  margin-right: 0.2em;
+}
