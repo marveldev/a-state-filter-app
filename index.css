@@ -8,8 +8,11 @@ body {
 }
 
 .input {
-  padding: 0.5em 0em;
+  border: unset;
+  padding: 0.5em 0.7em;
   width: 70%;
+  margin-bottom: 1em;
+  border-radius: 25px;
 }
 
 h1 {
@@ -20,4 +23,23 @@ h1 {
 h1>i {
   color: black;
   margin-right: 0.2em;
+}
+
+.state-content {
+  width: 50%;
+  margin: auto;
+  background-color: #00000042;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  border-radius: 25px;
+  padding: 0.5em 0;
+}
+
+.state-name {
+  display: inline;
+  color: #f0f8ff;
+}
+
+.state-capital {
+  color: #7575a0;
 }

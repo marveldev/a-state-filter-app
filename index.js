@@ -1,7 +1,9 @@
 const input = document.querySelector('.input');
+const stateOutput = document.querySelector('.states-output');
 
 input.addEventListener('keyup', () => {
   let inputValue = input.value;
+  stateOutput.innerHTML = '';
 
   fetch('./index.json').then( (response) => {
     return response.json();
@@ -22,14 +24,14 @@ input.addEventListener('keyup', () => {
 
 function displaySearch(matches) {
   matches.forEach(match => {
-  let output = `
-    <div>
-      <h4>${match.name}</h4>
-      <span>capital: ${match.capital}</span><br>
-      <small>latitude: ${match.lat}</small>
-      <small>longitude: ${match.long}</small>
+    let output = `
+      <div class="state-content">
+        <h3 class="state-name">${match.name}</h3>
+        <span class="state-capital">capital: ${match.capital}</span><br>
+        <small>latitude: ${match.lat}</small>
+        <small>longitude: ${match.long}</small>
       </div>
-  `
-  const stateOutput = document.querySelector('.states-output').innerHTML += output;
+    `
+    stateOutput.innerHTML += output;
   });
 }
